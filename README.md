@@ -89,6 +89,8 @@ This method validates if the input suministrated by the user satisfy the rules o
   4.4. It can only contain **one #**.
 
   4.5. It can't be **0#** or ***#**.
+
+  4.6. It can't contain more than *.
   
 ## 5. TestCases
 
