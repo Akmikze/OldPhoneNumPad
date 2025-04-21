@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 public static class Program
 {
-    // Mensajes de bienvenida y despedida
+    // Welcome and Exit Messages / Mensajes de bienvenida y despedida
     private const string WelcomeMessage = "Welcome to the Old Phone Number Pad Experience / Bienvenido a la Experiencia de escribir en un Pad Numerico Viejo";
     private const string ExitMessage = "Thanks for using the Old Phone Number Pad Experience / Gracias por usar la Experiencia de escribir en un Pad Numerico Viejo";
     private const string InvalidInputMessage = "Remember to enter Valid Data (Numbers, Spaces, 0 with other numbers and one # are valid, letters, 0#, #, *# or any number without # are not valid) / Recuerda usar datos validos (Numeros, Espacio 0 con otros numeros y un # son validos, 0#, #, *# or cualquier otro numero sin # no son validos)";
