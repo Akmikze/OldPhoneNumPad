@@ -120,10 +120,176 @@ This method is the main one this one decodes the inputs of the users. As it foll
 
   7.4. Then a while loop is used to process each position on the input as we search the longest combination that matches the current string. 
   
-    7.4.1. If we found a match, we add the character that corresponds to the result and we move to the next position on the index.
+   7.4.1. If we found a match, we add the character that corresponds to the result and we move to the next position on the index.
 
-    7.4.2. If we found an *, we eliminate the last character (Simulating the erase function).
+   7.4.2. If we found an *, we eliminate the last character (Simulating the erase function).
 
-    7.4.3 If we found a # and is the only entry, we end the cycle.
+   7.4.3 If we found a # and is the only entry, we end the cycle.
 
-    7.4.4. If none of the above applies then we move on to the next character.
+   7.4.4. If none of the above applies then we move on to the next character.
+
+# Examples 
+## Example 1
+Input: "33#"
+
+Process: 
+
+The input is valid because it contains only numbers and one #, it also ends with #. 
+
+"33" =  "E" || We verify if it matches with the dictionary.
+~~"#" = "#" || This one it's eliminated from the result.~~ 
+
+So the result must be: E.
+
+## Example 2
+Input: "227*#" 
+
+Process: 
+
+The input is valid because it contains only numbers, one #, one * and it also ends with #. 
+
+"22" = "B" || We verify if it matches with the dictionary.
+"7" =  "P" || We verify if it matches with the dictionary.
+"*" =    "*" || We verify if it matches with the dictionary.
+"#" =  "#" || We verify if it matches with the dictionary. 
+
+Since we have * the program should do this: 
+
+"22" =  "B" 
+~~"7" = "P" || Gets Eliminated by *.~~ 
+~~"*" = "*" || This one it's eliminated from the result.~~ 
+~~"#" = "#" || This one it's eliminated from the result.~~ 
+
+Result: B.
+
+## Example 3
+
+Input: "4433555 555666#"
+
+Process: 
+
+The input is valid because it contains only numbers, one #, one * and it also ends with #. 
+
+"44" =  "H" || We verify if it matches with the dictionary.
+"33" =  "E" || We verify if it matches with the dictionary.
+"555" = "L" || We verify if it matches with the dictionary.
+" " =   " " || We verify if it matches with the dictionary.
+"555" = "L" || We verify if it matches with the dictionary.
+"666" = "O" || We verify if it matches with the dictionary.
+"#" =   "#" || We verify if it matches with the dictionary.
+
+Since we have a space we ignore it and the program should do this. 
+
+"44" =  "H" 
+"33" =  "E" 
+"555" = "L" 
+~~" " = " " || Gets Eliminated.~~
+"555" = "L" 
+"666" = "O" 
+~~"#" =   "#" || This one it's eliminated from the result.~~
+
+Result: HELLO 
+
+## Example 4
+
+Input: "8 88777444666*664#"
+
+Process: 
+
+The input is valid because it contains only numbers, one #, one * and it also ends with #. 
+
+"8" =   "T" || We verify if it matches with the dictionary.
+" " =   " " || We verify if it matches with the dictionary.
+"88" =  "U" || We verify if it matches with the dictionary.
+"777" = "R" || We verify if it matches with the dictionary.
+"444" = "I" || We verify if it matches with the dictionary.
+"666" = "O" || We verify if it matches with the dictionary.
+"*" =   "*" || We verify if it matches with the dictionary.
+"66" =  "N" || We verify if it matches with the dictionary.
+"4" =   "G" || We verify if it matches with the dictionary.
+"#" =   "#" || We verify if it matches with the dictionary.
+
+In this case we have the *, space and the #. The program should do this. 
+
+"8" =   "T" 
+~~" " =   " " || Gets Eliminated.~~
+"88" =  "U" 
+"777" = "R" 
+"444" = "I" 
+~~"666" = "O" || Gets Eliminated by *.~~ 
+~~"*" =   "*" || This one it's eliminated from the result.~~
+"66" =  "N" 
+"4" =   "G" 
+~~"#" =   "#" || This one it's eliminated from the result.~~
+
+Result: TURING
+
+## Example 5 
+
+Input: "7"
+
+Process: 
+
+The input is invalid because despite containing only numbers it doesn't contain a #.
+
+Result: ERROR: YOU DIDN'T USE #
+
+## Example 6
+
+Input: "7**#"
+
+Process: 
+
+The input is invalid because despite containing only numbers it contains more than two *.
+
+Result: ERROR: YOU CAN'T USE TWO ASTERISK ONE AFTER THE OTHER
+
+## Example 7
+
+Input: "0#"
+
+Process: 
+
+The input is invalid because despite containing only numbers it only contains a space.
+
+Result: ERROR: YOU ONLY ENTER A SPACE
+
+## Example 8
+
+Input: "*#"
+
+Process: 
+
+The input is invalid because despite containing only numbers it only contains a space.
+
+Result: ERROR: YOU DIDN'T ENTER ANYTHING
+
+## Example 9
+
+Input: "#"
+
+Process: 
+
+The input is invalid because despite containing values that are part of the dictionary the user didn't enter anything.
+
+Result: ERROR: YOU DIDN'T ENTER ANYTHING
+
+## Example 10
+
+Input: "7#7#7#"
+
+Process: 
+
+The input is invalid because despite containing numbers the user used more than one #.
+
+Result: ERROR: TOO MANY #
+
+## Example 11
+
+Input: "A#"
+
+Process: 
+
+The input is invalid because it doesn't contain a number.
+
+Result: ERROR: ONLY NUMBERS ARE ALLOWED ON THE INPUT
