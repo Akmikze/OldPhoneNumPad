@@ -299,7 +299,7 @@ Input: "*#"
 
 Process: 
 
-The input is invalid because despite containing values that are part of the dictionary the user didn't enter anything.
+The input is invalid because despite containing only numbers it only contains a space.
 
 Result: ERROR: YOU DIDN'T ENTER ANYTHING
 
