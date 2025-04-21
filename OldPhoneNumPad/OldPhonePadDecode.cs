@@ -60,7 +60,7 @@ namespace OldPhoneNumPad
                 else if (input[currentIndex] == '#' && input.Count(c => c == '#') == 1) {
                     break; // We end the Loop if we found a '#' / Termina el bucle si se encuentra un '#'    
                 }
-                else // If anything on the above happens / Si nada de lo anterior sucede
+                else // If anything of the above happens / Si nada de lo anterior sucede
                 {
                     currentIndex++; // We move the current index forward / Movemos el índice actual hacia adelante
                 }
