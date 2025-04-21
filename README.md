@@ -90,7 +90,7 @@ This method validates if the input suministrated by the user satisfy the rules o
 
   4.5. It can't be **0#** or ***#**.
 
-  4.6. It can't contain more than *.
+  4.6. It can't contain more than one * one after the other.
   
 ## 5. TestCases Method
 
