@@ -102,7 +102,7 @@ This method executes a series of predefined test cases to verify the behaviour o
 
 ## 6. RunTestCase Method 
 
-This method executes an indivual test doing the following: 
+This method executes an individual test doing the following: 
 
   6.1. Validates the entry using the IsValidInput method.
 
