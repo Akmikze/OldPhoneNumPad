@@ -92,7 +92,7 @@ This method validates if the input suministrated by the user satisfy the rules o
 
   4.6. It can't contain more than *.
   
-## 5. TestCases
+## 5. TestCases Method
 
 This method executes a series of predefined test cases to verify the behaviour of the program. And it works as it follows: 
 
