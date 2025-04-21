@@ -139,6 +139,7 @@ Process:
 The input is valid because it contains only numbers and one #, it also ends with #. 
 
 "33" =  "E" || We verify if it matches with the dictionary.
+
 ~~"#" = "#" || This one it's eliminated from the result.~~ 
 
 So the result must be: E.
@@ -151,15 +152,21 @@ Process:
 The input is valid because it contains only numbers, one #, one * and it also ends with #. 
 
 "22" = "B" || We verify if it matches with the dictionary.
+
 "7" =  "P" || We verify if it matches with the dictionary.
+
 "*" =    "*" || We verify if it matches with the dictionary.
+
 "#" =  "#" || We verify if it matches with the dictionary. 
 
 Since we have * the program should do this: 
 
 "22" =  "B" 
+
 ~~"7" = "P" || Gets Eliminated by *.~~ 
+
 ~~"*" = "*" || This one it's eliminated from the result.~~ 
+
 ~~"#" = "#" || This one it's eliminated from the result.~~ 
 
 Result: B.
@@ -173,21 +180,33 @@ Process:
 The input is valid because it contains only numbers, one #, one * and it also ends with #. 
 
 "44" =  "H" || We verify if it matches with the dictionary.
+
 "33" =  "E" || We verify if it matches with the dictionary.
+
 "555" = "L" || We verify if it matches with the dictionary.
+
 " " =   " " || We verify if it matches with the dictionary.
+
 "555" = "L" || We verify if it matches with the dictionary.
+
 "666" = "O" || We verify if it matches with the dictionary.
+
 "#" =   "#" || We verify if it matches with the dictionary.
 
 Since we have a space we ignore it and the program should do this. 
 
 "44" =  "H" 
+
 "33" =  "E" 
+
 "555" = "L" 
+
 ~~" " = " " || Gets Eliminated.~~
+
 "555" = "L" 
+
 "666" = "O" 
+
 ~~"#" =   "#" || This one it's eliminated from the result.~~
 
 Result: HELLO 
@@ -201,27 +220,45 @@ Process:
 The input is valid because it contains only numbers, one #, one * and it also ends with #. 
 
 "8" =   "T" || We verify if it matches with the dictionary.
+
 " " =   " " || We verify if it matches with the dictionary.
+
 "88" =  "U" || We verify if it matches with the dictionary.
+
 "777" = "R" || We verify if it matches with the dictionary.
+
 "444" = "I" || We verify if it matches with the dictionary.
+
 "666" = "O" || We verify if it matches with the dictionary.
+
 "*" =   "*" || We verify if it matches with the dictionary.
+
 "66" =  "N" || We verify if it matches with the dictionary.
+
 "4" =   "G" || We verify if it matches with the dictionary.
+
 "#" =   "#" || We verify if it matches with the dictionary.
 
 In this case we have the *, space and the #. The program should do this. 
 
 "8" =   "T" 
+
 ~~" " =   " " || Gets Eliminated.~~
+
 "88" =  "U" 
+
 "777" = "R" 
+
 "444" = "I" 
+
 ~~"666" = "O" || Gets Eliminated by *.~~ 
+
 ~~"*" =   "*" || This one it's eliminated from the result.~~
+
 "66" =  "N" 
+
 "4" =   "G" 
+
 ~~"#" =   "#" || This one it's eliminated from the result.~~
 
 Result: TURING
