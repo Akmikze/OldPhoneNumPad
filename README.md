@@ -42,7 +42,7 @@ ExitMessage: An Exit Message once you exit the program.
 
 InvalidInputMessage: A Message that explains which inputs are valid.
 
-ReminderMessage: A Reminder Message to remind the users to inser valid input.
+ReminderMessage: A Reminder Message to remind the users to insert valid input.
 
 ## 2. Main Method 
 
