@@ -12,11 +12,11 @@ For example:
 
 Pressing **2** once is gonna end up showing **A**. That means: **2# = A**. 
 
-On the other han pressing twice the number **2** is gonna generate a **B** in this case **22# = B**.
+On the other hand pressing twice the number **2** is gonna generate a **B** in this case **22# = B**.
 
 One of the requirements for this challenge is that you **must** pause for a second in order to type two characters from the same button after each other. 
 
-Here is an Example of it: **222 2 22#** = **CAB** As you can see here spaces are not counted and the message is not show as **C A B** this is because the space is the equivalent of an right arrow you could use the **0** between those spaces like this **222020200#** but you'll generate this instead **C A B**.
+Here is an Example of it: **222 2 22#** = **CAB** As you can see here the spaces are not counted and the message is not shown as **C A B** this is because the space is the equivalent of a right arrow you could use the **0** between those spaces like this **222020200#** but you'll generate this instead **C A B**.
 
 The other requirement for this challenge is that you **must** end every message with **#**
 
